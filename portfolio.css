@@ -9,7 +9,7 @@ body {
     font-family: "Poppins", Arial, sans-serif;
 
     /* 🔥 Image qui bouge en même temps que le scroll */
-    background-image: url("IMG_2504.jpg");
+    background-image: url("Nassim.png");
     background-size: cover;          /* recouvre toute la page */
     background-repeat: no-repeat;
     background-position: top center; /* ta tête reste visible */
