@@ -1,86 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Nassim</title>
     <link rel="stylesheet" href="portfolio.css">
 </head>
-
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <ul>
-            <li><a href="#accueil" class="active">Accueil</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-inner">
+            <div class="logo">Nassim</div>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- ACCUEIL -->
-    <header id="accueil" class="header reveal">
-        <div class="intro">
-            <h1 class="typing">Portfolio de Nassim</h1>
-            <p>Développeur passionné en quête de nouveaux défis !</p>
-        </div>
-    </header>
+    <main>
 
-    <!-- PRESENTATION -->
-    <section class="presentation reveal" id="about">
-        <div class="content">
-            <p>
-                💡 Salut, moi c’est <strong>Nassim</strong> 👋<br>
-                Étudiant en <strong>STI2D</strong> et passionné par la <strong>programmation</strong>, j’adore
-                donner vie à mes idées à travers le code.<br>
-                J’ai déjà réalisé plusieurs projets : un site de <strong>streaming</strong>, un <strong>jeu vidéo</strong>
-            et ce n’est que le début ! 🚀
-            </p>
-        </div>
-    </section>
-
-    <!-- PROJETS -->
-    <section class="projets reveal" id="projets">
-        <h2>Projet</h2>
-
-        <div class="projets-container">
-
-            <div class="projet">
-                <a href="https://mugiwaworld.andasite.store/index.html" target="_blank">
-                    <img src="streaming.png" alt="Site de streaming" class="image-projet">
-                </a>
-                <h4>Site de Streaming</h4>
-                <p>Un site moderne inspiré des plateformes de streaming.</p>
+        <!-- HERO -->
+        <header id="accueil" class="hero">
+            <div class="hero-logo">
+                <img src="Nassim.png" alt="Logo Nassim">
             </div>
 
-        </div>
-    </section>
+            <div class="hero-inner">
+                <p class="hero-tag">Développeur étudiant · STI2D</p>
+                <h1>Portfolio de Nassim</h1>
+                <p class="hero-text">
+                    Passionné par le développement web et la programmation.
+                    J’aime créer des projets simples, propres et efficaces.
+                </p>
+                <a href="projets.html" class="btn-primary">Voir mes projets</a>
+            </div>
+        </header>
 
-    <!-- COMPETENCES -->
-    <section class="competences reveal" id="competences">
-        <h2>Compétences Techniques</h2>
-        <ul>
-            <li>HTML / CSS — Création de sites web responsives</li>
-            <li>Python — Développement de mini jeu en 2D</li>
-        </ul>
-    </section>
+        <!-- À PROPOS -->
+        <section id="about" class="section">
+            <h2>À propos</h2>
+            <p>
+                Salut, moi c’est <strong>Nassim</strong>.<br>
+                Je suis étudiant en STI2D et passionné par le développement web,
+                la programmation et la création de projets concrets.
+                J’aime apprendre en pratiquant et transformer mes idées en projets réels.
+            </p>
+        </section>
 
-    <!-- CONTACT -->
-    <section class="contact reveal" id="contact">
-        <h2>Contactez-moi</h2>
-        <p>Email : <strong>nassimchakhad@outlook.fr</strong></p>
-        <p>Mes réseaux :</p>
-        <ul>
-            <li><a href="https://x.com/nxc60" target="_blank">Twitter</a></li>
-            <li><a href="https://www.instagram.com/nsmchsmb/" target="_blank">Instagram</a></li>
-        </ul>
-    </section>
+    </main>
 
-    <!-- BOUTON RETOUR HAUT -->
-    <button class="scroll-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+    <!-- BOUTON RETOUR EN HAUT -->
+    <button
+        class="scroll-top"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        aria-label="Retour en haut">
+        ↑
+    </button>
 
 </body>
-
 </html>
