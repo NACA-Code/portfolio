@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Nassim</title>
+    <link rel="stylesheet" href="projets.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-projets">
+
+        <header class="page-hero">
+            <h1 class="page-title">Mes projets</h1>
+            <p class="page-subtitle">
+                Des idées simples, des interfaces lisibles et une attention particulière à l’expérience visuelle.
+            </p>
+            <div class="project-badges" aria-label="Compétences liées aux projets">
+                <span>Portfolio · créations</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive</span>
+            </div>
+        </header>
+
+        <section class="overview-grid">
+            <article class="projet projet-featured">
+                <div class="project-topline">
+                    <span class="project-tag">Projet phare</span>
+                    <span class="project-year">2026</span>
+                </div>
+
+                <div class="projet-layout">
+                    <div class="project-visual">
+                        <a href="https://mugiwaworld.andasite.store/index.html" target="_blank" class="projet-logo-link" aria-label="Voir le site de streaming">
+                            <img src="streaming.png" alt="Logo site de streaming" class="projet-logo">
+                        </a>
+                    </div>
+
+                    <div class="projet-content">
+                        <div class="projet-header-copy">
+                            <p class="projet-tech">HTML · CSS</p>
+                            <h3>Site de streaming</h3>
+                        </div>
+
+                        <div class="projet-body">
+                            <p>
+                                Site inspiré des grandes plateformes de streaming, pensé pour offrir une navigation fluide,
+                                une expérience visuelle claire et une interface agréable à parcourir sur tous supports.
+                            </p>
+                        </div>
+
+                        <ul class="project-points">
+                            <li>Interface épurée</li>
+                            <li>Navigation intuitive</li>
+                            <li>Design moderne</li>
+                        </ul>
+
+                        <div class="project-actions">
+                            <a href="https://mugiwaworld.andasite.store/index.html" target="_blank" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <aside class="side-panel">
+                <div class="mini-card">
+                    <span class="mini-label">Focus</span>
+                    <strong>Expérience utilisateur</strong>
+                    <p>Un design soigné, lisible et orienté contenu.</p>
+                </div>
+                <div class="mini-card">
+                    <span class="mini-label">Stack</span>
+                    <strong>HTML / CSS</strong>
+                    <p>Structure claire, style moderne et responsive.</p>
+                </div>
+            </aside>
+        </section>
+
+    </main>
+
+    <!-- Bouton retour en haut -->
+    <button class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" aria-label="Retour en haut">↑</button>
+
+</body>
+</html>
