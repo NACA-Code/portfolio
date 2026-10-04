@@ -8,10 +8,9 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR (Toujours visible et centrée) -->
     <nav class="navbar">
         <div class="nav-inner">
-            <div class="logo">Nassim</div>
             <ul class="nav-links">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="projets.html" class="active">Projets</a></li>
@@ -23,39 +22,139 @@
 
     <main class="page-projets">
 
-        <!-- Titre -->
-        <h1 class="page-title">Mes projets</h1>
+        <header class="page-hero">
+            <h1 class="page-title">Mes projets</h1>
+            <p class="page-subtitle">
+                Des idées simples, des interfaces lisibles et une attention particulière à l’expérience visuelle.
+            </p>
+            <div class="project-badges" aria-label="Compétences liées aux projets">
+                <span>Portfolio · créations</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive</span>
+            </div>
+        </header>
 
-        <!-- Grille de projets -->
-        <section class="projets-grid">
+        <!-- WRAPPER : Sépare chaque bloc de projet -->
+        <div class="projects-wrapper">
 
-            <!-- Projet : Site de streaming -->
-            <article class="projet">
-                <a href="https://mugiwaworld.andasite.store/index.html" target="_blank" class="projet-logo-link">
-                    <img src="streaming.png" alt="Logo site de streaming" class="projet-logo">
-                </a>
-                <div class="projet-body">
-                    <h3>Site de streaming</h3>
-                    <p>Site inspiré des grandes plateformes de streaming, avec une interface simple et épurée pour parcourir les contenus.</p>
-                    <p class="projet-tech">Technologies : HTML, CSS</p>
-                </div>
-            </article>
+            <!-- =============================== -->
+            <!-- PROJET 1 : SITE DE STREAMING    -->
+            <!-- =============================== -->
+            <section class="overview-grid">
+                <article class="projet projet-featured">
+                    <div class="project-topline">
+                        <span class="project-tag">Projet Web</span>
+                        <span class="project-year">2026</span>
+                    </div>
 
-            <!-- Projet : exemple à dupliquer -->
-            <!--
-            <article class="projet">
-                <a href="#" target="_blank" class="projet-logo-link">
-                    <img src="projet2.png" alt="Logo du projet" class="projet-logo">
-                </a>
-                <div class="projet-body">
-                    <h3>Nom du projet</h3>
-                    <p>Description courte et concise du projet.</p>
-                    <p class="projet-tech">Technologies : HTML / CSS / JS</p>
-                </div>
-            </article>
-            -->
+                    <div class="projet-layout">
+                        <div class="project-visual">
+                            <a href="https://mugiwaworld.andasite.store/index.html" target="_blank" class="projet-logo-link" aria-label="Voir le site de streaming">
+                                <img src="streaming.png" alt="Logo site de streaming" class="projet-logo">
+                            </a>
+                        </div>
 
-        </section>
+                        <div class="projet-content">
+                            <div class="projet-header-copy">
+                                <p class="projet-tech">HTML · CSS</p>
+                                <h3>Site de streaming</h3>
+                            </div>
+
+                            <div class="projet-body">
+                                <p>
+                                    Site inspiré des grandes plateformes de streaming, pensé pour offrir une navigation fluide,
+                                    une expérience visuelle claire et une interface agréable à parcourir sur tous supports.
+                                </p>
+                            </div>
+
+                            <ul class="project-points">
+                                <li>Interface épurée</li>
+                                <li>Navigation intuitive</li>
+                                <li>Design moderne</li>
+                            </ul>
+
+                            <div class="project-actions">
+                                <a href="https://mugiwaworld.com" target="_blank" class="project-link">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PANNEAU LATÉRAL DU PROJET 1 -->
+                <aside class="side-panel">
+                    <div class="mini-card">
+                        <span class="mini-label">Focus</span>
+                        <strong>Expérience utilisateur</strong>
+                        <p>Un design soigné, lisible et orienté contenu.</p>
+                    </div>
+                    <div class="mini-card">
+                        <span class="mini-label">Stack</span>
+                        <strong>HTML / CSS</strong>
+                        <p>Structure claire, style moderne et responsive.</p>
+                    </div>
+                </aside>
+            </section>
+
+
+            <!-- =============================== -->
+            <!-- PROJET 2 : OLYMPIADES SI        -->
+            <!-- =============================== -->
+            <section class="overview-grid">
+                <article class="projet">
+                    <div class="project-topline">
+                        <span class="project-tag">Ingénierie & Concours</span>
+                        <span class="project-year">2026</span>
+                    </div>
+
+                    <div class="projet-layout">
+                        <div class="project-visual">
+                            <a href="https://journaldelacite.canalblog.com/2026/05/projet-de-la-terminale-tt2d2-que-les-eleves-ont-presente-aux-olympiades-si-a-montpellier.html" target="_blank" class="projet-logo-link" aria-label="Voir l'article du projet Olympiades SI">
+                                <img src="kjjk.png" alt="Présentation de la main robotique aux Olympiades SI" class="projet-logo">
+                            </a>
+                        </div>
+
+                        <div class="projet-content">
+                            <div class="projet-header-copy">
+                                <p class="projet-tech">C++ · ESP32 · Impression 3D</p>
+                                <h3>Main Robotique Biométrique</h3>
+                            </div>
+
+                            <div class="projet-body">
+                                <p>
+                                    Conception et ingénierie d'un prototype de main robotique commandée par des capteurs musculaires (EMG). Le système intègre un microcontrôleur ESP32, des servomoteurs, et des pièces en PLA modélisées puis imprimées en 3D.
+                                </p>
+                            </div>
+
+                            <ul class="project-points">
+                                <li>Capteurs EMG</li>
+                                <li>Microcontrôleur ESP32</li>
+                                <li>Impression 3D (PLA)</li>
+                            </ul>
+
+                            <div class="project-actions">
+                                <a href="https://journaldelacite.canalblog.com/2026/05/projet-de-la-terminale-tt2d2-que-les-eleves-ont-presente-aux-olympiades-si-a-montpellier.html" target="_blank" class="project-link">Lire l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PANNEAU LATÉRAL DU PROJET 2 -->
+                <aside class="side-panel">
+                    <div class="mini-card">
+                        <span class="mini-label">Focus</span>
+                        <strong>Olympiades SI</strong>
+                        <p>Présentation d'un prototype fonctionnel devant un jury.</p>
+                    </div>
+                    <div class="mini-card">
+                        <span class="mini-label">Matériel</span>
+                        <strong>Électronique & 3D</strong>
+                        <p>Capteurs biométriques, carte ESP32 et modélisation de pièces.</p>
+                    </div>
+                </aside>
+            </section>
+
+        </div> <!-- Fin du Wrapper de projets -->
 
     </main>
 
